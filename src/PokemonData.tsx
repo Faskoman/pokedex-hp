@@ -51,7 +51,7 @@ export function PokemonData({ name }: PokemonDataProps) {
   return (
     <article className={styles.pokemonData}>
       <article>
-        <h2>{name}</h2>
+        <h2 className={styles.pokemonName}>{name}</h2>
         <img
           src={pokemonData.sprites.other["official-artwork"].front_default}
           alt=""

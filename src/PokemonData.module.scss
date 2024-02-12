@@ -2,12 +2,18 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    padding: 1rem;
-    align-items: baseline;
+    padding: 0 1rem;
+    // align-items: baseline;
 }
 
 .pokemonStats {
     background: var(--stats-background-color);
-    padding: 1rem;
+    padding: 0.5rem 1rem 1rem;
     border-radius: 8px;
+    height: fit-content;
+}
+
+.pokemonName {
+    text-transform: capitalize;
+    margin-top: 0.3rem;
 }
