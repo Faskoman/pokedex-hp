@@ -4,7 +4,7 @@ import { Pokemons } from "./Pokemons";
 import "./App.scss";
 
 function App() {
-  const [currentPokemonName, setCurrentPokemonName] = useState("Abra");
+  const [currentPokemonName, setCurrentPokemonName] = useState("Bulbasaur");
 
   return (
     <main>
