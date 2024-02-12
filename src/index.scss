@@ -1,12 +1,14 @@
 :root {
     --link-color: hsl(50, 70%, 50%);
     --stats-background-color: hsl(0, 18%, 29%);
+    --shadow-color: rgba(255, 255, 255, 0.1);
 }
 
 @media (prefers-color-scheme: light) {
     :root {
         --link-color: hsl(19, 70%, 50%);
         --stats-background-color: hsl(0, 100%, 73%);
+        --shadow-color: rgba(0, 0, 0, 0.2);
     }
 }
 

@@ -5,11 +5,11 @@ type PokemonsProps = {
   onPokemonNameClicked: (pokemonName: string) => void;
 };
 
-const pokemons = await getPokemonNames(151);
+const pokemons = await getPokemonNames();
 
-async function getPokemonNames(limit: number) {
+async function getPokemonNames(offset: number = 0, limit: number = 151) {
   const res = await axios.get(
-    `https://pokeapi.co/api/v2/pokemon?offset=0&limit=${limit}`
+    `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
   );
 
   const names = []
