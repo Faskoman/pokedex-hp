@@ -1,3 +1,15 @@
+:root {
+    --link-color: hsl(50, 70%, 50%);
+    --stats-background-color: hsl(0, 18%, 29%);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --link-color: hsl(19, 70%, 50%);
+        --stats-background-color: hsl(0, 100%, 73%);
+    }
+}
+
 *,
 *::before,
 *::after {
@@ -57,7 +69,7 @@ h3 {
 }
 
 a {
-    color: hsl(45deg 70% 50%);
+    color: var(--link-color);
     text-decoration: none;
     font-weight: 600;
 

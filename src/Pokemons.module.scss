@@ -1,8 +1,23 @@
+.menu {
+    overflow-y: scroll;
+    
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
 .listItem {
     padding: 0.3rem 0;
+    border-block-end: 2px solid transparent;
+    direction: ltr;
 }
 
 .link {
     display: block;
     padding: 0.2rem 1rem;
+}
+
+.listItem:has(a:hover) {
+    background-color: #8080802f;
+    border-inline-end: 4px solid var(--link-color);
 }

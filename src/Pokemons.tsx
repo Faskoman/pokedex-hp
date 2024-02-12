@@ -5,7 +5,6 @@ type PokemonsProps = {
   onPokemonNameClicked: (pokemonName: string) => void;
 };
 
-// const pokemons = ["Abra", "Pikachu", "Charmander", "Ditto", "Gengar"];
 const pokemons = await getPokemonNames(151);
 
 async function getPokemonNames(limit: number) {
@@ -13,18 +12,16 @@ async function getPokemonNames(limit: number) {
     `https://pokeapi.co/api/v2/pokemon?offset=0&limit=${limit}`
   );
 
-  const pokemons = []
+  const names = []
   for (let i = 0; i < limit; i++) {
-    pokemons.push(res.data.results[i].name);
+    names.push(res.data.results[i].name);
   }
-  return pokemons
+  return names
 }
-
-console.log(pokemons);
 
 export function Pokemons({ onPokemonNameClicked }: PokemonsProps) {
   return (
-    <menu>
+    <menu className={styles.menu}>
       {pokemons.map((pokemonName) => (
         <li key={pokemonName} className={styles.listItem}>
           <a

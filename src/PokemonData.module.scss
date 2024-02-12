@@ -7,7 +7,7 @@
 }
 
 .pokemonStats {
-    background: hsl(0, 100%, 73%);
+    background: var(--stats-background-color);
     padding: 1rem;
     border-radius: 8px;
 }
