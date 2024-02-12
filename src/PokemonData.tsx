@@ -59,7 +59,7 @@ export function PokemonData({ name }: PokemonDataProps) {
       </article>
       <article className={styles.pokemonStats}>
         <h3>Stats</h3>
-        <ul>
+        <ul className={styles.pokemonStats__list}>
           <li>HP: {getStat(pokemonData, "hp")}</li>
           <li>Attack: {getStat(pokemonData, "attack")}</li>
           <li>Defense: {getStat(pokemonData, "defense")}</li>

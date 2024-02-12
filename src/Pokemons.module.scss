@@ -1,6 +1,7 @@
 .menu {
     overflow-y: scroll;
-    
+    padding-inline-start: 1ch;
+
     &::-webkit-scrollbar {
         display: none;
     }
@@ -8,7 +9,8 @@
 
 .listItem {
     padding: 0.3rem 0;
-    border-block-end: 2px solid transparent;
+    border-inline-end: 4px solid var(--shadow-color);
+
     direction: ltr;
     text-transform: capitalize;
 

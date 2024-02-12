@@ -8,7 +8,7 @@
     :root {
         --link-color: hsl(19, 70%, 50%);
         --stats-background-color: hsl(0, 100%, 73%);
-        --shadow-color: rgba(0, 0, 0, 0.2);
+        --shadow-color: rgba(0, 0, 0, 0.1);
     }
 }
 
@@ -45,7 +45,6 @@ img {
 ul,
 menu {
     padding: 0;
-    list-style: none;
 }
 
 h1,
